@@ -30,3 +30,7 @@ Wow--this seems to break the UJS ... switching back application.html.erb
 And there is an issue with Haml (and erb) "sanitizing" the Html output. See:
 
   http://stackoverflow.com/questions/1622209/how-to-send-back-js-haml-in-rails
+
+Seems to run pretty well, but it is difficult to debug extensive JS when 
+it's written this way. Errors *do not* show up in the JS console as you
+would exepect...
