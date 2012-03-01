@@ -1,0 +1,40 @@
+$full-width: 710px;
+$background-color: #cff;
+$link-color: #09c;
+$visited-link-color: #069;
+
+#container {
+  width: $full-width;
+  // to center the content...
+  margin: 0 auto;
+}
+
+#posts_list {
+  margin-top: 20px;
+  padding: 5px;
+  background: white;
+}
+
+body {
+  background: $background-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $visited-link-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $visited-link-color;
+  }
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}

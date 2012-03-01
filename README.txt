@@ -26,7 +26,7 @@ And to convert ERB files to Haml,
 
 > html2haml application.html.erb application.haml
 
-Wow--this seems to break the UJS ... switching back application.html.erb
+Wow--this seems to break the UJS ... switching back to application.html.erb
 And there is an issue with Haml (and erb) "sanitizing" the Html output. See:
 
   http://stackoverflow.com/questions/1622209/how-to-send-back-js-haml-in-rails
@@ -34,3 +34,12 @@ And there is an issue with Haml (and erb) "sanitizing" the Html output. See:
 Seems to run pretty well, but it is difficult to debug extensive JS when 
 it's written this way. Errors *do not* show up in the JS console as you
 would expect...
+
+
+3/1/2012 dtc
+=============
+Lets add some quick CSS ...
+
+  http://ruby.railstutorial.org/chapters/rails-flavored-ruby?version=3.2#sec:cascading_style_sheets
+
+And change the root_path to "posts#index"
