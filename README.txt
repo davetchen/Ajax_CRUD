@@ -1,3 +1,6 @@
+
+http://sharp-samurai-1332.herokuapp.com
+
 2/26/2012 dtc
 =============
 New Rails 3.2.1 app using ruby 1.9.3, setup rvm as in ../README.txt
@@ -62,4 +65,3 @@ Git remote heroku added
 
 > git push heroku master
 > heroku run rake db:migrate
-
