@@ -50,3 +50,16 @@ And change the root_path to "posts#index"
 Lastly, just for fun lets add a JS tooltip to the Show link
 
   http://craigsworks.com/projects/qtip2
+
+OK, ready to deploy to heroku!
+
+> gem install heroku
+> heroku create --stack cedar
+Creating sharp-samurai-1332... done, stack is cedar
+
+http://sharp-samurai-1332.herokuapp.com/ | git@heroku.com:sharp-samurai-1332.git
+Git remote heroku added
+
+> git push heroku master
+> heroku run rake db:migrate
+
