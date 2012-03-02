@@ -5,3 +5,4 @@
   $("#posts_list").hide();
   $("#posts_list").html("#{escape_javascript( render(:partial => "posts") )}");
   $("#posts_list").show(0);
+  ajaxcrud_init_tooltips();

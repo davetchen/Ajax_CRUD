@@ -13,3 +13,32 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+function ajaxcrud_init_tooltips() {
+  $('a.show').each( function(index) {
+    $(this).qtip({
+      content: {
+        text: 'Loading...',
+        ajax: {
+          url: this.href + '.json',
+          type: 'GET',
+          data: {},
+          success: function( data, status ) {
+            var str  = "<strong>Post</strong> <br>";
+            str += "Id: " + data.id + "<br>";
+            str += "Name: " + data.name + "<br>";
+            str += "Title: " + data.title + "<br>";
+            str += "Content: " + data.content;
+
+            this.set('content.text', str);
+          },
+        },
+      },
+    });
+  });
+}
+
+
+$(function() {
+  ajaxcrud_init_tooltips();
+});

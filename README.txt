@@ -43,3 +43,10 @@ Lets add some quick CSS ...
   http://ruby.railstutorial.org/chapters/rails-flavored-ruby?version=3.2#sec:cascading_style_sheets
 
 And change the root_path to "posts#index"
+
+
+3/2/2012 dtc
+=============
+Lastly, just for fun lets add a JS tooltip to the Show link
+
+  http://craigsworks.com/projects/qtip2
