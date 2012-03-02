@@ -1,4 +1,4 @@
-$full-width: 710px;
+$full-width: 610px;
 $background-color: #cff;
 $link-color: #09c;
 $visited-link-color: #069;
@@ -7,12 +7,22 @@ $visited-link-color: #069;
   width: $full-width;
   // to center the content...
   margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  background: white;
+  border: solid 2px #ccc;
 }
 
 #posts_list {
   margin-top: 20px;
   padding: 5px;
-  background: white;
+  background: #ffc;
+}
+
+textarea {
+  width: 390px;
+  height: 100px;
+  padding: 5px;
 }
 
 body {
