@@ -13,4 +13,5 @@
 class Post < ActiveRecord::Base
   attr_accessible :name, :title, :content
   validates_presence_of :name, :title, :content
+  default_scope :order => "created_at DESC"
 end
