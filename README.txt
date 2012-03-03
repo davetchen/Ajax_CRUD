@@ -65,3 +65,19 @@ Git remote heroku added
 
 > git push heroku master
 > heroku run rake db:migrate
+
+
+3/3/2012 dtc
+=============
+Well, that was successful but it created the heroku app under my
+'work' account.  Let's see if we can create a separate 'personal' account.
+
+  http://martyhaught.com/articles/2010/12/14/managing-multiple-heroku-accounts/
+  http://www.karan.org/blog/index.php/2009/08/25/multiple-ssh-private-keys
+
+> heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+> heroku accounts:add locomotive
+> heroku accounts:add personal
+
+> heroku create --stack cedar
+http://blazing-rain-7907.herokuapp.com/ | git@heroku.com:blazing-rain-7907.git
