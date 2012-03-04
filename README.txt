@@ -1,5 +1,5 @@
 
-http://sharp-samurai-1332.herokuapp.com
+http://blazing-rain-7907.herokuapp.com/
 
 2/26/2012 dtc
 =============
@@ -70,14 +70,21 @@ Git remote heroku added
 3/3/2012 dtc
 =============
 Well, that was successful but it created the heroku app under my
-'work' account.  Let's see if we can create a separate 'personal' account.
+'work' account.  Let's see if we can create a separate 'personal' heroku
+account.
 
   http://martyhaught.com/articles/2010/12/14/managing-multiple-heroku-accounts/
   http://www.karan.org/blog/index.php/2009/08/25/multiple-ssh-private-keys
 
 > heroku plugins:install git://github.com/ddollar/heroku-accounts.git
 > heroku accounts:add locomotive
-> heroku accounts:add personal
+> heroku accounts:add personal --auto
 
 > heroku create --stack cedar
 http://blazing-rain-7907.herokuapp.com/ | git@heroku.com:blazing-rain-7907.git
+
+
+Hmmm .. looks like a little hack is needed now to set the HEROKU_ACCOUNT
+
+> export HEROKU_ACCOUNT=personal
+> printenv HEROKU_ACCOUNT

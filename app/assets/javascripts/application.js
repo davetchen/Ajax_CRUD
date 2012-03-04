@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.qtip.min
 //= require_tree .
+//= require_self
 
 function ajaxcrud_init_tooltips() {
   $('a.show').each( function(index) {
